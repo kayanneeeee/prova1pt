@@ -1,0 +1,40 @@
+<html>
+<body>
+    <h2> prova de tecnologias</h2>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html" onclick="home();"> home </a></li>
+            <li><a href="#" onclick="cadastrar();"> cadastro </a></li>
+            <li><a href="#" onclick="tarefas();"> tarefas </a></li>
+            <li><a href="#"> sobre </a></li>
+        </ul>
+    </div>
+    <div id="centro">
+    <div id="tarefas"> tarefas:
+        <input id="name" type="text" placeholder="nome"><br>
+        <input type="text" placeholder="nome"><br>
+        <input type="text" placeholder="login"><br>
+        <input class="botao">
+        <button class="botao"> adicionar </button>
+    </div>
+    <div id="imagem">
+        <img src="smile.jpg" width="200" height="200">
+    </div>
+</div> 
+<script>
+    document.getElementsByTagName("h2")[0].style.color= "green";
+    document.getElementsByTagName("h2")[0].style.fontfamily= "arial";
+    document.getElementsByTagName("h2")[0].innerHTML= "prova de web avancada";
+    var dx = document.getElementsByClassName("botao")[0].value
+    document.getElementsByTagName("a")[3].innerHTML = dx;
+    var m = document.createElement("p");
+    m.innerHTML = "kayanne";
+    var mm = document.getElementsByClassName("botao")[1];
+    mm.addEventListener("click",
+    function()
+    {
+        mm.remove();
+    });
+    </script>
+</body>
+</html>
